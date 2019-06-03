@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500i,600,600i,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>PelículasBM</title>
+    <link href="main.css" rel="stylesheet"></head>
+    <body>
+    <!-- Pop up -->
+    <div class="popUp">
+        <!-- <a href="#" class="popUp__cerrar"></a>
+        <img src="./img/rocky.jpg" alt="" class="popUp__img">
+        <h4 class="popUp__titulo">Rocky Balboa</h4> 
+        <h4 class="popUp__sinopsisTitulo">Sinopsis</h4>
+        <p class="popUp__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum, ab beatae odit fuga ea tempora facere consequatur perferendis ducimus? Praesentium ducimus dolores maxime illo animi labore consectetur expedita voluptatem.
+        Quae optio ex eos ea libero rem et animi est, a laudantium veniam modi dicta tempore rerum, unde iure, ipsa iste quibusdam quaerat? Maiores nam ut fuga explicabo maxime recusandae!
+        Itaque in soluta maxime reprehenderit quaerat eius, alias tempore harum reiciendis eveniet commodi hic officia iste, aut provident id officiis sed inventore nostrum odit odio et cumque mollitia cum. Autem.
+        Alias neque nam minima, recusandae explicabo quos quibusdam blanditiis repellat consequuntur ab sed impedit? Accusamus ea eaque beatae atque consectetur tempora, laborum earum dolores veniam? Recusandae vero ab commodi quae.
+        Illum provident tempora rerum asperiores recusandae voluptate veniam quis animi, impedit sequi aliquid excepturi temporibus ipsum rem accusantium modi! Nobis aliquid molestiae, fugiat quibusdam minima eveniet quia nisi facere voluptas?</p>
+        <h4 class="popUp__repartoTitulo">Reparto</h4>
+        <ul class="popUp__lista">
+            <li>
+                <img src="./img/actor.jpg" alt="">
+                <p class="contenido">Tom Hardy</p>
+            </li>
+            <li>
+                <img src="./img/actor.jpg" alt="">
+                <p class="contenido">Tom Hardy</p>
+            </li>
+            <li>
+                <img src="./img/actor.jpg" alt="">
+                <p class="contenido">Tom Hardy</p>
+            </li>
+            <li>
+                <img src="./img/actor.jpg" alt="">
+                <p class="contenido">dkjskflkjskjdlkjsdlsdf</p>
+            </li>
+        </ul>    
+        <h4 class="popUp__duracionTitulo">Duración</h4>
+        <p class="popUp__duracion">120 min.</p>
+        <h4 class="popUp__generoTitulo">Género</h4>
+        <p class="popUp__genero">Acción</p>
+        <button class="popUp__btn">Ver trailer</button> -->
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__nav">
+            <div class="header__logo">
+                <h2 class="logo">Películas</h2>            
+                <svg>
+                    <use xlink:href="img/symbol-defs.svg#icon-video-camera"></svg>
+                </svg>    
+            </div>
+            <div class="header__iconos">
+                <div class="header__menu">
+                    <input type="checkbox" class="header__menuCheckbox" id="checkbox">
+                    <label for="checkbox" class="header__menubTn">
+                        <span class="header__menuIcono">&nbsp;</span>
+                    </label>
+                    <!-- Contenedor de el menú -->
+                    <div class="header__navListaContenedor">
+                        <ul class="header__navLista">
+                            <li class="header__navListaItem">
+                                <a href="#actualmenteCines">Actualmente en cines</a>
+                            </li>
+                            <li class="header__navListaItem">
+                                <a href="#proximamente">Próximamente en cines</a>
+                            </li>
+                            <li class="header__navListaItem">
+                                <a href="#actoresPelicula">Busca actores que hayan salido juntos en una película</a>
+                            </li>
+                            <li class="header__navListaItem">
+                                <a href="#mejoresPeliculas">Busca cuales son las mejores películas por género</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__likes">
+                    <svg class="header__likesIcono" onmouseover="hoverIcono()" onmouseout="notHoverIcono()">
+                        <use xlink:href="img/symbol-defs.svg#icon-heart"></svg>
+                    </svg>
+                    <div class="header__likesPanel" onmouseover="hover()" onmouseout="notHover()">
+                        <ul class="header__likesList">
+                            <!-- <li class="header__likesItem">
+                                <img src="img/star-wars.jpg" alt="pelicula">
+                                <h3>Star wars</h3>
+                                <span>2019</span>
+                                <div class="header__likesItemIconos">
+                                    <a href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">X</a>
+                                </div>
+                            </li>
+                            <li class="header__likesItem">
+                                <img src="img/star-wars.jpg" alt="pelicula">
+                                <h3>Star wars</h3>
+                                <span>2019</span>
+                                <div class="header__likesItemIconos">
+                                    <a href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">X</a>
+                                </div>
+                            </li>
+                            <li class="header__likesItem">
+                                <img src="img/star-wars.jpg" alt="pelicula">
+                                <h3>Star wars</h3>
+                                <span>2019</span>
+                                <div class="header__likesItemIconos">
+                                    <a href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol-defs.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">X</a>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h1>Encuentra información de tus películas favoritas y todo tipo de información relacionada con cine.
+            </h1>
+            <a class="bTn bTn--main" href="#peliculaFavorita">
+                Buscar película
+            </a>
+        </div>
+    </header>
+    <!-- Actualmente en cines -->
+    <section class="actualmenteCines" id="actualmenteCines">
+        <h3 class="titulo">Actualmente en cines</h3>
+        <div class="container slider">
+            <div class="row mt-3">
+                <div class="col-12 mt-3">
+                    <div class="carousel slide" id="primary-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#primary-carousel" data-slid-to="0" class="active"></li>
+                            <li data-target="#primary-carousel" data-slid-to="1"></li>
+                            <li data-target="#primary-carousel" data-slid-to="2"></li>
+                            <li data-target="#primary-carousel" data-slid-to="3"></li>
+                            <li data-target="#primary-carousel" data-slid-to="4"></li>
+                        </ol>
+    
+                        <div class="carousel-inner">
+                            <!-- <div class="carousel-item active">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 1</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-1.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 2</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-2.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 3</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-3.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 4</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-3.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 5</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-3.jpg" alt="" class="imagen-slider">
+                            </div> -->
+                        </div>
+    
+                        <a href="#primary-carousel" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+    
+                        <a href="#primary-carousel" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="bTn bTn--info bTn--buscarPelicula--Actualmente">
+            Ver información
+        </button>
+    </section>
+    <!-- Sección de citas  -->
+    <section class="seccionCitas">
+        <div class="seccionCitas__citaContenedor">
+            <div class="seccionCitas__foto seccionCitas__foto--1">
+
+            </div>
+            <div class="seccionCitas__cita">
+                <h4 class="cita"> <span>“ </span>It's not about how hard you hit, is about how hard you can get hit and keep moving foward. <span> ”</span></h4>
+            </div>
+            <div class="seccionCitas__actor">
+                <p class="personaje">Rocky Balboa - <span>Rocky Balboa</span></p>
+            </div>
+        </div>
+        <div class="seccionCitas__citaContenedor">
+            <div class="seccionCitas__foto seccionCitas__foto--2">
+
+            </div>
+            <div class="seccionCitas__cita ">
+                <h4 class="cita"> <span>“ </span>You talkin' to me?<span> ”</span></h4>
+            </div>
+            <div class="seccionCitas__actor">
+                <p class="personaje">Travis Bickle - <span>Taxi Driver</span></p>
+            </div> 
+        </div>
+        <div class="seccionCitas__citaContenedor">
+            <div class="seccionCitas__foto seccionCitas__foto--3">
+                
+            </div>
+            <div class="seccionCitas__cita">
+                <h4 class="cita"> <span>“ </span>It's only after we've lost everything that we're free to do anything. <span> ”</span></h4>
+            </div>
+            <div class="seccionCitas__actor">
+                <p class="personaje">Tyler Durden - <span>Fight Club</span></p>
+            </div>
+        </div>
+        <div class="seccionCitas__citaContenedor">
+            <div class="seccionCitas__foto seccionCitas__foto--4">
+
+            </div>
+            <div class="seccionCitas__cita">
+                <h4 class="cita"> <span>“ </span>Here's johnny<span> ”</span></h4>
+            </div>
+            <div class="seccionCitas__actor">
+                <p class="personaje">Jack Torrance - <span>The shining</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- Proximos estrenos -->
+    <section class="actualmenteCines" id="proximamente">
+        <h3 class="titulo">Próximos estrenos</h3>
+        <div class="container slider">
+            <div class="row mt-3">
+                <div class="col-12 mt-3">
+                    <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
+                            <li data-target="#secondary-carousel" data-slid-to="1"></li>
+                            <li data-target="#secondary-carousel" data-slid-to="2"></li>
+                            <li data-target="#secondary-carousel" data-slid-to="3"></li>
+                            <li data-target="#secondary-carousel" data-slid-to="4"></li>
+                        </ol>
+    
+                        <div class="carousel-inner carousel-inner--2">
+                            <!-- <div class="carousel-item active">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 1</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-1.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 2</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-2.jpg" alt="" class="imagen-slider">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4 class="imagen-slider-titulo">Titulo de la Imagen 3</h4>
+                                    <p class="slider-imagen-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus!</p>
+                                </div>
+                                <img src="img/img-3.jpg" alt="" class="imagen-slider">
+                            </div> -->
+                        </div>
+    
+                        <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+    
+                        <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="bTn bTn--info bTn--proximos">
+            Ver información
+        </button>
+    </section>
+    <!-- Buscar en que películas han salido 2 actores específicos -->
+    <section class="actoresJuntosPelicula" id="actoresPelicula">
+        <div class="actoresJuntosPelicula__titulo">
+            <h3 class="titulo">Busca actores que hayan estado juntos en una película</h3>
+        </div>
+        <div class="actoresJuntosPelicula__contenido">
+            <div class="actoresJuntosPelicula__actor actoresJuntosPelicula__actor--1">
+                <div class="actoresJuntosPelicula__actorTitulo">
+                    <h4 class="actorTitulo">Ingresa el nombre de un actor ó actriz</h4>
+                </div>
+                <form action="#" class="formulario">
+                    <input type="text" placeholder="Nombre" class="formulario__actor--1">
+                </form>
+                <div class="actoresJuntosPelicula__resultadoActor actoresJuntosPelicula__resultadoActor--1">
+                    <!-- <img src="./img/actor.jpg" alt="">
+                    <ul>
+                        <li>Edward Thomas Hardy</li>
+                        <li>41 años</li>
+                        <li>Britanico</li>
+                        <li>10 películas</li>
+                    </ul> -->
+                    <!-- <div class="spinner">
+                        <svg class="spinner__icono">
+                            <use xlink:href="img/symbol-defs.svg#icon-loop2"></svg>
+                        </svg>
+                    </div> -->
+                </div>    
+            </div>
+            <div class="actoresJuntosPelicula__pelicula">
+                <div class="actoresJuntosPelicula__peliculaContenido">
+                    <button class="bTn bTn--info-1 bTn--info-b">Buscar películas</button>
+                    <!-- <div class="spinner spinner--blanco">
+                        <svg class="spinner__icono spinner__icono--blanco">
+                            <use xlink:href="img/symbol-defs.svg#icon-loop2"></svg>
+                        </svg>
+                    </div> -->
+                    
+                    <ul>
+                        <!-- <li>
+                            <img src="./img/rocky.jpg" alt="">
+                            <h4>Rocky Balboa</h4>
+                            <p>2017</p>
+                            <button class="bTnbtn--info-1">Ver información</button>
+                        </li>
+                        <li>
+                            <img src="./img/rocky.jpg" alt="">
+                            <h4>Rocky Balboa</h4>
+                            <p>2017</p>
+                            <button class="bTnbtn--info-1">Ver información</button>
+                        </li>
+                        <li>
+                            <img src="./img/rocky.jpg" alt="">
+                            <h4>Rocky Balboa</h4>
+                            <p>2017</p>
+                            <button class="bTnbtn--info-1">Ver información</button>
+                        </li>
+                        <li>
+                            <img src="./img/rocky.jpg" alt="">
+                            <h4>Rocky Balboa</h4>
+                            <p>2017</p>
+                            <button class="bTnbtn--info-1">Ver información</button>
+                        </li> -->
+                        
+                    </ul> 
+                    <div class="actoresJuntosPelicula__contenedorPaginacion">
+                        <!-- <div class="actoresJuntosPelicula__paginacion--izquierda">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./img/symbol-defs.svg#icon-chevron-thin-left"></use>
+                                </svg> 
+                            </a>
+                        </div>
+                        <div class="actoresJuntosPelicula__paginacion--derecha">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                                </svg> 
+                            </a>
+                        </div>  -->
+                    </div>
+                </div>
+            </div> 
+            <div class="actoresJuntosPelicula__actor actoresJuntosPelicula__actor--2">
+                <div class="actoresJuntosPelicula__actorTitulo">
+                    <h4 class="actorTitulo">Ingresa el nombre de un actor ó actriz</h4>
+                </div>
+                <form action="#" class="formulario">
+                    <input type="text" placeholder="Nombre" class="formulario__actor--2">
+                </form>
+                <div class="actoresJuntosPelicula__resultadoActor actoresJuntosPelicula__resultadoActor--2">
+                    <!-- <img src="./img/actor.jpg" alt="">
+                    <ul>
+                        <li>Edward Thomas Hardy</li>
+                        <li>41 años</li>
+                        <li>Britanico</li>
+                        <li>10 películas</li>
+                    </ul> -->
+                    <!-- <div class="spinner">
+                        <svg class="spinner__icono">
+                            <use xlink:href="img/symbol-defs.svg#icon-loop2"></svg>
+                        </svg>
+                    </div> -->
+                </div>     
+            </div> 
+        </div>
+
+    </section>
+    <!-- Película favorita -->
+    <section class="peliculaFavorita" id="peliculaFavorita">
+        <div class="peliculaFavorita__titulo">
+            <h3 class="titulo">Encuentra información de tu película favorita</h3>
+        </div>
+        <div class="peliculaFavorita__contenido">
+            <div class="peliculaFavorita__form">
+                <form action="#" class="formulario">
+                    <input type="text" placeholder="Ingresa el nombre de tu película favorita" class="formulario__inputPelicula">
+                </form>
+            </div>
+            <div class="peliculaFavorita__info">
+                    <!-- <div class="spinner spinner--blanco spinner--blanco--2">
+                        <svg class="spinner__icono spinner__icono--blanco spinner__icono--blanco--2">
+                            <use xlink:href="img/symbol-defs.svg#icon-loop2"></svg>
+                        </svg>
+                    </div> -->
+                <!-- <div class="peliculaFavorita__info--primaria">
+                    <img src="./img/rocky.jpg" alt="">
+                    <h4>Rocky Balboa</h4>
+                </div> -->
+                <!-- <div class="peliculaFavorita__info--secundaria">
+                    <div class="peliculaFavorita__sinopsis">
+                        <h4 class="infoSecundariaTitulo">Sinopsis</h4>
+                        <p class="contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum, ab beatae odit fuga ea tempora facere consequatur perferendis ducimus? Praesentium ducimus dolores maxime illo animi labore consectetur expedita voluptatem.
+                        Quae optio ex eos ea libero rem et animi est, a laudantium veniam modi dicta tempore rerum, unde iure, ipsa iste quibusdam quaerat? Maiores nam ut fuga explicabo maxime recusandae!
+                        Itaque in soluta maxime reprehenderit quaerat eius, alias tempore harum reiciendis eveniet commodi hic officia iste, aut provident id officiis sed inventore nostrum odit odio et cumque mollitia cum. Autem.
+                        Alias neque nam minima, recusandae explicabo quos quibusdam blanditiis repellat consequuntur ab sed impedit? Accusamus ea eaque beatae atque consectetur tempora, laborum earum dolores veniam? Recusandae vero ab commodi quae.
+                        Illum provident tempora rerum asperiores recusandae voluptate veniam quis animi, impedit sequi aliquid excepturi temporibus ipsum rem accusantium modi! Nobis aliquid molestiae, fugiat quibusdam minima eveniet quia nisi facere voluptas?</p>
+                    </div>
+                    <div class="peliculaFavorita__reparto">
+                        <h4 class="infoSecundariaTitulo">Reparto</h4>
+                        <ul class="peliculaFavorita__lista">
+                            <li>
+                                <img src="./img/actor.jpg" alt="">
+                                <p class="contenido">Tom Hardy</p>
+                            </li>
+                            <li>
+                                <img src="./img/actor.jpg" alt="">
+                                <p class="contenido">Tom Hardy</p>
+                            </li>
+                            <li>
+                                <img src="./img/actor.jpg" alt="">
+                                <p class="contenido">Tom Hardy</p>
+                            </li>
+                            <li>
+                                <img src="./img/actor.jpg" alt="">
+                                <p class="contenido">dkjskflkjskjdlkjsdlsdf</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="peliculaFavorita__duracion">
+                        <h4 class="infoSecundariaTitulo">Duración</h4>
+                        <p class="contenido">120 min.</p>
+                    </div>
+                    <div class="peliculaFavorita__genero">
+                        <h4 class="infoSecundariaTitulo">Género</h4>
+                        <p class="contenido">Acción</p>
+                    </div>
+
+                    <button class="bTnbtn--favorita">Ver trailer</button> 
+
+                </div> -->
+            </div>
+        </div>
+        
+    </section>
+    <!-- Mejores películas filtradas por género -->
+    <section class="mejoresPeliculas" id="mejoresPeliculas">
+        <div class="mejoresPeliculas__contenido mejoresPeliculas__contenido--formulario">
+            <h4 class="titulo titulo--pq">Encuentra las mejores películas</h4>
+            <form action="#" class="formulario formulario--rosa formulario__mejoresPeliculas">
+                <select name="genero" class="formulario__select">
+                    <option value="28">Accion</option>
+                    <option value="12">Aventura</option>
+                    <option value="16">Animacion</option>
+                    <option value="35">Comedia</option>
+                    <option value="80">Crimen</option>
+                    <option value="99">Documental</option>
+                    <option value="18">Drama</option>
+                    <option value="10751">Familia</option>
+                    <option value="14">Fantasia</option>
+                    <option value="36">Historia</option>
+                    <option value="27">Terror</option>
+                    <option value="10402">Musica</option>
+                    <option value="9648">Misterio</option>
+                    <option value="10749">Romance</option>
+                    <option value="878">Ciencia ficcion</option>
+                    <option value="10770">Pelicula de TV</option>
+                    <option value="53">Suspenso</option>
+                    <option value="10752">Guerra</option>
+                    <option value="37">Western</option>
+                </select>
+                <button class="bTn bTn--info-2 bTn--info-p">Buscar</button>
+            </form>
+        </div>
+        <div class="mejoresPeliculas__contenido mejoresPeliculas__contenido--contenido">
+            <h4 class="titulo titulo--pq titulo--pq--r titulo--pq--mp"></h4>
+            <ul class="mejoresPeliculas__lista">
+                <!-- <li class="mejoresPeliculas__listaItem">
+                    <img src="./img/rocky.jpg" alt="">
+                    <h5>Rocky</h5>
+                    <p>2017</p>
+                    <div>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/symbol-defs.svg#icon-triangle-right"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                               <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="mejoresPeliculas__listaItem">
+                    <img src="./img/rocky.jpg" alt="">
+                    <h5>El señor de ...</h5>
+                    <p>2017</p>
+                    <div>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/symbol-defs.svg#icon-triangle-right"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                               <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="mejoresPeliculas__listaItem">
+                    <img src="./img/rocky.jpg" alt="">
+                    <h5>Rocky</h5>
+                    <p>2017</p>
+                    <div>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/symbol-defs.svg#icon-triangle-right"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                               <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="mejoresPeliculas__listaItem">
+                    <img src="./img/rocky.jpg" alt="">
+                    <h5>Rocky</h5>
+                    <p>2017</p>
+                    <div>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/symbol-defs.svg#icon-triangle-right"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                               <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="mejoresPeliculas__paginacion">
+                <!-- <div class="mejoresPeliculas__paginacion--izquierda">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./img/symbol-defs.svg#icon-chevron-thin-left"></use>
+                        </svg> 
+                    </a>
+                </div>
+                <div class="mejoresPeliculas__paginacion--derecha">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./img/symbol-defs.svg#icon-chevron-thin-right"></use>
+                        </svg> 
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section> 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="header__logo footer__logo">
+            <h2 class="logo">Películas</h2>            
+            <svg>
+                <use xlink:href="img/symbol-defs.svg#icon-video-camera"></svg>
+            </svg>   
+        </div>
+        <div class="footer__texto">
+            <h5>Creado con <span><svg><use xlink:href="img/symbol-defs.svg#icon-heart"></svg></svg> </span> en la ciudad de México</h5> 
+        </div>
+        <ul class="footer__redes">
+            <li class="footer__redesItem">
+                <svg>
+                    <use xlink:href="img/symbol-defs.svg#icon-facebook"></svg>
+                </svg>   
+            </li>
+            <li class="footer__redesItem">
+                <svg>
+                    <use xlink:href="img/symbol-defs.svg#icon-twitter"></svg>
+                </svg>   
+            </li>
+            <li class="footer__redesItem">
+                <svg>
+                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></svg>
+                </svg>   
+            </li>
+            <li class="footer__redesItem">
+                <svg>
+                    <use xlink:href="img/symbol-defs.svg#icon-linkedin"></svg>
+                </svg>   
+            </li>
+        </ul>
+    </footer> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        const icono = document.querySelector('.header__likesIcono');
+
+        const colorear = () => {
+            icono.style.fill = '#ffff';
+            icono.style.stroke = 'transparent';
+            icono.style.background = '#EF2542';
+        }
+        const decolorar = () => {
+            icono.style.fill = 'transparent';
+            icono.style.stroke = '#EF2542';
+            icono.style.background = 'transparent';
+        }
+
+        const mostrarMensajeSinLikes = () => {
+            if(document.querySelector('.header__likesList').children.length == 0){
+                document.querySelector('.header__likesList').innerHTML = `<p>No tienes ninguna película en favoritos</p>`;
+            }
+        }
+
+        //Función que colorea el contenedor del icono
+        const hover = () => {colorear();}
+        //Función que decolora el contenedor del icono
+        const notHover = () => {decolorar();}
+        //Función que colorea el icono
+        const hoverIcono = () => {colorear();}
+        //Función que decolora el icono
+        const notHoverIcono = () => {decolorar();}
+
+        mostrarMensajeSinLikes();
+    </script>
+    <script src="bundle.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

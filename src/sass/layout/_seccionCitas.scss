@@ -1,0 +1,56 @@
+.seccionCitas {
+    height: auto;
+    width: 100%;
+    padding: 20rem 8rem;
+    background-image: $capaGris, url(#{$imgpath}/img-2.jpg);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    grid-gap: 2rem;
+    @include imagenFondo;
+
+    &__citaContenedor {
+        width: 100%;
+        @include flexDirectionColumn;
+        align-items: center;
+    }
+    
+    &__foto {
+        width: 23rem;
+        height: 23rem;
+        border-radius: 46rem;
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        &--1 {
+            background-image: $capaRosa, url(#{$imgpath}/rocky.jpg);
+        }
+        &--2 {
+            background-image: $capaRosa, url(#{$imgpath}/driver.jpg);
+            background-position-x: right;
+            
+        }
+        &--3 {
+            background-image: $capaRosa, url(#{$imgpath}/fight.jpg);
+        }
+        &--4 {
+            background-image: $capaRosa, url(#{$imgpath}/johnny.jpg);
+
+        }
+        
+        
+    }
+    &__cita {
+        @include citaDiseño;   
+        max-width: 25rem;
+        align-items: center;
+        
+    }
+
+    &__actor {
+        @include citaDiseño;   
+        align-items: end;
+        
+    }
+
+}

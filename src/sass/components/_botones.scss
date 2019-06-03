@@ -1,0 +1,95 @@
+.bTn{
+    border: none;
+    padding: 1.2rem 1.8rem;
+    margin-top: 2rem;
+    background-color: $rosaPrimario;
+    font-weight: 700;
+    font-size: $tamañoDefault;
+    color: $blanco;
+    transition: all .3s;
+    &--main {
+        width: 20%;
+        align-self: center;
+        @include responsive(tab-port){
+            width: 40%;
+        }
+        @include responsive(phone){
+            width: 80%;
+        }
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: $rosaSecundario;
+        background-color: $blanco;
+    }
+
+    // &:focus {
+    //     outline: none;
+    // }
+
+    &--actor{
+        border: 1px solid $rosaPrimario;
+        background: transparent;
+        padding: 0;
+        color: $rosaPrimario;
+        width: 40%;
+        font-weight: 400;
+        &:hover{
+            border: 1px solid transparent;
+        }
+    }
+
+    &--info {
+        margin: 0 auto;
+        height: 5rem;
+        max-width: 20rem;
+        grid-row: 3 / 4;
+        align-self: center;
+        font-size: $tamañoDefault;
+    }
+
+    &--info-1 {
+        margin-top: 1rem;
+        background: $blanco;
+        color: $rosaPrimario;
+        border: 2px solid $blanco;
+        &:hover {
+            @include hoverbTn;
+        }
+    }
+    &--info-2 {
+        background: $blanco;
+        color: $rosaPrimario;
+        border: 2px solid $blanco;
+        height: 4rem;
+        width: 12rem;
+        padding: 0;
+        &:hover {
+            @include hoverbTn;
+        }
+        
+    }
+    &--favorita {
+        margin: 0;
+        width: 20%;
+        justify-self: flex-end;
+        @include responsive(tab-port){
+            width: 40%;
+        }
+    }
+}
+
+.btnCarousel{
+    width: 5rem;
+    height: 5rem;
+    & svg {
+        height: 3rem;
+        width: 3rem;
+    
+    }
+}

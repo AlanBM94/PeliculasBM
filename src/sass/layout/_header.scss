@@ -1,0 +1,317 @@
+.header {
+    background: $capaGris, url(#{$imgpath}/hero.jpg) no-repeat;
+    height: 100vh;
+    grid-template-rows: 10% 90%;
+    @include imagenFondo;
+    // ------------Navegación---------------
+
+    &__nav {
+        position: fixed;
+        display: grid;
+        grid-template-rows: 10vh;
+        padding: 0 5rem;
+        grid-template-columns: repeat(8, 1fr);
+        justify-items: start;
+        align-items: center;
+        background: $capaGris;
+        width: 100%;
+        z-index: 100;
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__logo svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $rosaPrimario;
+        stroke-width: 2;
+        margin-left: 5px;
+    }
+
+    &__iconos {
+        grid-column: 8 / 9;
+        @include tamaño100;
+        display: flex;
+        @include responsive(tab-port){
+            width: 8rem;
+        }
+    }
+
+    
+    // ----------Sección de activar menú--------------
+    &__menu {
+        width: 100%;
+        @include flexEnd;
+        @include responsive(tab-land){
+            justify-content: flex-start;
+        }
+    }
+
+    &__menuCheckbox {
+        display: none;
+    }
+
+    &__menubTn{
+        cursor: pointer;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+    }
+
+    // &__menuCheckbox:checked ~ &__navListaContenedor{
+    //     visibility: visible;
+    //     opacity: 1;
+    //     transform: translateY(0%);
+    // }
+
+    // &__menuCheckbox:checked + &__menubTn &__menuIcono {
+    //     background-color: transparent;
+    // }
+
+    // &__menuCheckbox:checked + &__menubTn &__menuIcono::before {
+    //     top: 0;
+    //     transform: rotate(135deg);
+    // }
+
+    // &__menuCheckbox:checked + &__menubTn &__menuIcono::after {
+    //     top: 0;
+    //     transform: rotate(-135deg);
+    // }
+    
+    &__menuIcono {
+        
+        position: relative;
+        &,
+        &::before,
+        &::after {
+            width: 2.5rem;
+            height: 2px;
+            background-color: $blanco;
+            display: inline-block;
+        }
+
+        // &:hover {cursor: pointer;}
+        // &:before:hover {cursor: pointer;}
+        // &:after:hover {cursor: pointer;}
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { 
+            top: -.9rem; 
+        }
+        &::after { 
+            top: .9rem; 
+        }
+
+    }
+
+    &__navListaContenedor {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        background: $gris-transparente;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .3s;
+        // @include responsive(tab-port){
+        //     height: 370%;
+        // }
+        
+    }
+
+    &__navLista {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        list-style: none;
+        @include flexDirectionColumn;
+    }
+
+    &__navListaItem {
+        text-align: $centrarTexto;
+        font-size: $tamañoDefault;
+        padding: 1rem 0;
+        border-bottom: 2px solid $rosaPrimario;
+        margin-top: .5rem;
+        transition: all .3s;
+    }
+
+    &__navListaItem:hover {
+        border-bottom: 2px solid $blanco;
+
+    }
+
+    
+    &__navListaItem a  {
+        text-decoration: none;
+        color: $blanco;
+        transition: all .3s;
+    }
+
+    &__navListaItem:hover a{
+        color: $rosaPrimario;
+
+    }
+
+
+    // ----------Sección de likes-------------
+
+    &__likes{
+        @include tamaño100;
+        @include flexEnd;
+    }
+
+    &__likesIcono {
+        width: 2.8rem;
+        height: 100%;
+        fill: transparent;
+        stroke: $rosaPrimario;
+        stroke-width: 1.5px;
+        transition: all .3s;
+        position: relative;
+    }
+    &__likesList {
+        list-style: none;
+        & p {
+            color: $blanco;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+    }
+
+    &__likesItem {
+        transition: all .2s;
+    }
+
+    &__likesItem:hover {
+        background: $rosaPrimario;
+    }
+
+    &__likesPanel:hover, &__likesIcono:hover + &__likesPanel {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    &__likesItem {
+        display: grid;
+        height: 7rem;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        grid-template-columns: 6rem max-content 6rem;
+        grid-template-rows: 50%;
+        grid-column-gap: .5rem;
+    }
+
+    &__likesItem img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 9rem;
+        margin-right: 1rem;
+        grid-row: 1 / 3;
+        align-self: center;
+        
+    }
+
+
+    &__likesItem h3 {
+        align-self: end;
+        color: $blanco;
+        font-weight: 700;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+    
+    &__likesItem span {
+        color: $blanco;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        align-self: start;
+    }
+
+    &__likesItemIconos {
+        height: 100%;
+        width: 50%;
+        grid-row: 1 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-self: center;
+    }
+
+    &__likesItemIconos a {
+        text-decoration: none;
+        font-size: $tamañoPequeño;
+    }
+
+    &__likesItemIconos a:first-child {
+        margin-bottom: 3px;
+    }
+
+    &__likesItemIconos a:last-child {
+        font-size: $tamañoPequeño;
+        color: $gris;
+        font-weight: 700;
+    }
+
+    &__likesItemIconos a svg {
+        width: $tamañoPequeño;
+        height: $tamañoPequeño;
+        fill: $gris;
+    }
+
+    
+    &__likesIcono:hover {
+        cursor: pointer;
+        fill: $blanco;
+        background:$rosaSecundario;
+        
+    }
+
+    &__likesPanel {
+        background: $rosaSecundario;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        opacity: 0;
+        transition: all .3s;
+        transform: scaleY(0);
+        z-index: 1;
+    
+    }
+
+    
+
+    // Texto del header
+
+    &__texto {
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: center;
+        max-width: 80%;
+        text-align: $centrarTexto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+

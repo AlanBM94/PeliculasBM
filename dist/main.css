@@ -1,0 +1,1128 @@
+@keyframes iconoGirando {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box; }
+
+.logo {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #eeee; }
+
+.header__texto h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #eeee; }
+  @media only screen and (max-width: 56.25em) {
+    .header__texto h1 {
+      font-size: 3rem; } }
+
+.titulo {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #eeee; }
+  @media only screen and (max-width: 56.25em) {
+    .titulo {
+      font-size: 3rem; } }
+  .titulo--pq {
+    font-size: 2.8rem;
+    justify-self: center;
+    height: 15%;
+    align-self: center; }
+    .titulo--pq--r {
+      color: #EF2542; }
+
+.cita {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #eeee;
+  position: relative; }
+  .cita span {
+    font-size: 1.5rem;
+    color: #EF2542;
+    font-weight: 700; }
+
+.personaje {
+  margin-top: 1rem;
+  color: #EF2542;
+  font-size: 1.6rem; }
+  .personaje span {
+    opacity: 0.6; }
+
+.actorTitulo {
+  color: #eeee;
+  font-size: 1.9rem;
+  font-weight: 600; }
+
+.infoSecundariaTitulo {
+  font-size: 2rem;
+  color: #EF2542;
+  font-weight: 300; }
+
+.contenido {
+  font-size: 1.6rem;
+  color: #eeee;
+  text-align: justify; }
+  @media only screen and (max-width: 75em) {
+    .contenido {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .contenido {
+      font-size: 1.2rem; } }
+
+.bTn {
+  border: none;
+  padding: 1.2rem 1.8rem;
+  margin-top: 2rem;
+  background-color: #EF2542;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #eeee;
+  transition: all .3s; }
+  .bTn--main {
+    width: 20%;
+    align-self: center; }
+    @media only screen and (max-width: 56.25em) {
+      .bTn--main {
+        width: 40%; } }
+    @media only screen and (max-width: 37.5em) {
+      .bTn--main {
+        width: 80%; } }
+  .bTn:focus {
+    outline: none; }
+  .bTn:hover {
+    cursor: pointer;
+    color: #FF2746;
+    background-color: #eeee; }
+  .bTn--info {
+    margin: 0 auto;
+    height: 5rem;
+    max-width: 20rem;
+    grid-row: 3 / 4;
+    align-self: center;
+    font-size: 1.6rem; }
+  .bTn--info-1 {
+    margin-top: 1rem;
+    background: #eeee;
+    color: #EF2542;
+    border: 2px solid #eeee; }
+    .bTn--info-1:hover {
+      border: 2px solid #eeee;
+      background: transparent;
+      color: #eeee; }
+  .bTn--info-2 {
+    background: #eeee;
+    color: #EF2542;
+    border: 2px solid #eeee;
+    height: 4rem;
+    width: 12rem;
+    padding: 0; }
+    .bTn--info-2:hover {
+      border: 2px solid #eeee;
+      background: transparent;
+      color: #eeee; }
+  .bTn--favorita {
+    margin: 0;
+    width: 20%;
+    justify-self: flex-end; }
+    @media only screen and (max-width: 56.25em) {
+      .bTn--favorita {
+        width: 40%; } }
+
+.btnCarousel {
+  width: 5rem;
+  height: 5rem; }
+  .btnCarousel svg {
+    height: 3rem;
+    width: 3rem; }
+
+.formulario {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .formulario input {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #EF2542;
+    background-color: transparent;
+    font-size: 1.7rem;
+    color: #eeee; }
+    .formulario input::placeholder {
+      color: rgba(255, 255, 255, 0.692); }
+    .formulario input:focus {
+      outline: none;
+      border-bottom: 1px solid #eeee; }
+  .formulario--rosa {
+    height: 80%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .formulario--rosa select {
+      background: transparent;
+      border: none;
+      color: #eeee;
+      font-size: 1.6rem;
+      border-bottom: 1px solid #eeee;
+      width: 60%;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;charset=utf-8,             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'>               <polygon points='20,10 40,10 30,30' style='fill:white;'/>             </svg>");
+      background-repeat: no-repeat;
+      background-position-x: right; }
+      .formulario--rosa select option {
+        color: #EF2542; }
+      .formulario--rosa select:focus {
+        outline: none; }
+
+.slider {
+  grid-row: 2 / 3; }
+
+.imagen-slider {
+  width: 90%;
+  height: 40rem;
+  position: relative;
+  filter: brightness(25%); }
+
+.imagen-slider-titulo {
+  color: #EF2542;
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.slider-imagen-parrafo {
+  color: #eeee;
+  font-size: 1.6rem;
+  font-weight: 300;
+  opacity: 0.8; }
+
+.spinner--blanco--2 {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.spinner__icono {
+  width: 4rem;
+  width: 4rem;
+  fill: #EF2542;
+  animation: iconoGirando;
+  animation: iconoGirando 1.5s infinite linear; }
+  .spinner__icono--blanco {
+    fill: #eeee; }
+
+.actoresJuntosPelicula {
+  width: 100%;
+  height: auto;
+  background: #2E2828;
+  justify-content: center;
+  padding: 9rem 8rem 11rem 8rem;
+  display: grid;
+  grid-template-rows: 10rem max-content;
+  grid-gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .actoresJuntosPelicula {
+      grid-template-rows: repeat(2, max-content);
+      padding: 6rem 3rem 11rem 3rem; } }
+  .actoresJuntosPelicula__titulo {
+    text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .actoresJuntosPelicula__titulo {
+        padding: 0; } }
+  .actoresJuntosPelicula__contenido {
+    width: 100%;
+    display: flex;
+    margin-top: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__contenido {
+        display: grid;
+        grid-template-rows: repeat(2, 50%);
+        height: auto;
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 56.25em) {
+      .actoresJuntosPelicula__contenido {
+        grid-template-rows: repeat(2, max-content); } }
+  .actoresJuntosPelicula__pelicula {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background: #EF2542;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__pelicula {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1; } }
+  .actoresJuntosPelicula__contenedorPaginacion {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center; }
+    .actoresJuntosPelicula__contenedorPaginacion a svg {
+      width: 2rem;
+      height: 2rem;
+      fill: #eeee; }
+    .actoresJuntosPelicula__contenedorPaginacion span {
+      color: #131313; }
+    .actoresJuntosPelicula__contenedorPaginacion a svg:hover {
+      cursor: pointer; }
+    .actoresJuntosPelicula__contenedorPaginacion--izquierda {
+      margin-right: auto; }
+    .actoresJuntosPelicula__contenedorPaginacion--derecha {
+      margin-left: auto; }
+  .actoresJuntosPelicula__actor {
+    width: 80%;
+    height: auto;
+    padding: 3rem;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__actor {
+        height: 100%; } }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__actor--1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%; } }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__actor--2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 100%; } }
+  .actoresJuntosPelicula__actorTitulo {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem; }
+  .actoresJuntosPelicula__resultadoActor {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__resultadoActor {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        justify-content: space-around; } }
+    @media only screen and (max-width: 56.25em) {
+      .actoresJuntosPelicula__resultadoActor {
+        margin-top: 7rem;
+        flex-direction: column; } }
+    .actoresJuntosPelicula__resultadoActor img {
+      width: 9rem;
+      height: 9rem;
+      border-radius: 18rem; }
+      @media only screen and (max-width: 75em) {
+        .actoresJuntosPelicula__resultadoActor img {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 14rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .actoresJuntosPelicula__resultadoActor img {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 12rem; } }
+    .actoresJuntosPelicula__resultadoActor ul {
+      margin-top: 4rem;
+      list-style: none;
+      text-align: center; }
+      .actoresJuntosPelicula__resultadoActor ul li {
+        font-size: 1.6rem;
+        color: #EF2542; }
+        .actoresJuntosPelicula__resultadoActor ul li span {
+          color: #eeee;
+          opacity: 0.8; }
+      .actoresJuntosPelicula__resultadoActor ul li:not(:last-child) {
+        margin-bottom: 1.5rem; }
+        @media only screen and (max-width: 75em) {
+          .actoresJuntosPelicula__resultadoActor ul li:not(:last-child) {
+            margin: 0; } }
+  .actoresJuntosPelicula__peliculaContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    width: 90%; }
+    @media only screen and (max-width: 75em) {
+      .actoresJuntosPelicula__peliculaContenido {
+        flex-direction: row;
+        width: 100%; } }
+    @media only screen and (max-width: 56.25em) {
+      .actoresJuntosPelicula__peliculaContenido {
+        flex-direction: column;
+        height: auto; } }
+    .actoresJuntosPelicula__peliculaContenido ul {
+      list-style: none; }
+      .actoresJuntosPelicula__peliculaContenido ul li {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .actoresJuntosPelicula__peliculaContenido ul li:not(:last-child) {
+        margin-bottom: 3rem; }
+    .actoresJuntosPelicula__peliculaContenido img {
+      width: 14rem;
+      height: 14rem;
+      border-radius: 28rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .actoresJuntosPelicula__peliculaContenido img {
+          width: 8rem;
+          height: 8rem;
+          border-radius: 16rem; } }
+    .actoresJuntosPelicula__peliculaContenido h4 {
+      font-size: 1.8rem;
+      color: #eeee;
+      font-weight: 700; }
+    .actoresJuntosPelicula__peliculaContenido p {
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.692);
+      font-weight: 600; }
+
+.actualmenteCines {
+  padding: 9rem 8rem;
+  display: grid;
+  grid-template-rows: 10rem max-content 17rem;
+  background-image: linear-gradient(to right bottom, #232526, #131313);
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .actualmenteCines {
+      padding: 9rem 3rem; } }
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  padding: 3rem 8rem;
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem; } }
+  .footer__logo {
+    align-self: center; }
+  .footer__texto h5 {
+    font-size: 1.6rem;
+    color: #eeee; }
+    .footer__texto h5 span svg {
+      width: 1.8rem;
+      height: 1.8rem;
+      fill: #EF2542; }
+  .footer__redes {
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    list-style: none;
+    justify-items: end;
+    align-items: center; }
+  .footer__redesItem {
+    padding: 0 0.5rem; }
+    .footer__redesItem svg {
+      width: 2rem;
+      height: 2rem;
+      fill: transparent;
+      stroke: #EF2542;
+      transition: all .2s; }
+    .footer__redesItem svg:hover {
+      fill: #EF2542; }
+
+.header {
+  background: linear-gradient(to right bottom, #040404d5, #040404d5), url(/img/hero.jpg) no-repeat;
+  height: 100vh;
+  grid-template-rows: 10% 90%;
+  display: grid;
+  background-attachment: fixed;
+  background-size: cover; }
+  .header__nav {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 10vh;
+    padding: 0 5rem;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: start;
+    align-items: center;
+    background: linear-gradient(to right bottom, #040404d5, #040404d5);
+    width: 100%;
+    z-index: 100; }
+  .header__logo {
+    display: flex; }
+  .header__logo svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #EF2542;
+    stroke-width: 2;
+    margin-left: 5px; }
+  .header__iconos {
+    grid-column: 8 / 9;
+    width: 100%;
+    height: 100%;
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .header__iconos {
+        width: 8rem; } }
+  .header__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 75em) {
+      .header__menu {
+        justify-content: flex-start; } }
+  .header__menuCheckbox {
+    display: none; }
+  .header__menubTn {
+    cursor: pointer;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem; }
+  .header__menuIcono {
+    position: relative; }
+    .header__menuIcono, .header__menuIcono::before, .header__menuIcono::after {
+      width: 2.5rem;
+      height: 2px;
+      background-color: #eeee;
+      display: inline-block; }
+    .header__menuIcono::before, .header__menuIcono::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .header__menuIcono::before {
+      top: -.9rem; }
+    .header__menuIcono::after {
+      top: .9rem; }
+  .header__navListaContenedor {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    background: #040404d5;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .3s; }
+  .header__navLista {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .header__navListaItem {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #EF2542;
+    margin-top: .5rem;
+    transition: all .3s; }
+  .header__navListaItem:hover {
+    border-bottom: 2px solid #eeee; }
+  .header__navListaItem a {
+    text-decoration: none;
+    color: #eeee;
+    transition: all .3s; }
+  .header__navListaItem:hover a {
+    color: #EF2542; }
+  .header__likes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .header__likesIcono {
+    width: 2.8rem;
+    height: 100%;
+    fill: transparent;
+    stroke: #EF2542;
+    stroke-width: 1.5px;
+    transition: all .3s;
+    position: relative; }
+  .header__likesList {
+    list-style: none; }
+    .header__likesList p {
+      color: #eeee;
+      font-size: 1.2rem;
+      padding: 1rem; }
+  .header__likesItem {
+    transition: all .2s; }
+  .header__likesItem:hover {
+    background: #EF2542; }
+  .header__likesPanel:hover, .header__likesIcono:hover + .header__likesPanel {
+    opacity: 1;
+    transform: scaleY(1); }
+  .header__likesItem {
+    display: grid;
+    height: 7rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: 6rem max-content 6rem;
+    grid-template-rows: 50%;
+    grid-column-gap: .5rem; }
+  .header__likesItem img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 9rem;
+    margin-right: 1rem;
+    grid-row: 1 / 3;
+    align-self: center; }
+  .header__likesItem h3 {
+    align-self: end;
+    color: #eeee;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 1.3rem; }
+  .header__likesItem span {
+    color: #eeee;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: start; }
+  .header__likesItemIconos {
+    height: 100%;
+    width: 50%;
+    grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center; }
+  .header__likesItemIconos a {
+    text-decoration: none;
+    font-size: 1.4rem; }
+  .header__likesItemIconos a:first-child {
+    margin-bottom: 3px; }
+  .header__likesItemIconos a:last-child {
+    font-size: 1.4rem;
+    color: #2E2828;
+    font-weight: 700; }
+  .header__likesItemIconos a svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: #2E2828; }
+  .header__likesIcono:hover {
+    cursor: pointer;
+    fill: #eeee;
+    background: #FF2746; }
+  .header__likesPanel {
+    background: #FF2746;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transition: all .3s;
+    transform: scaleY(0);
+    z-index: 1; }
+  .header__texto {
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+
+.mejoresPeliculas {
+  height: 80rem;
+  background: #2E2828;
+  display: flex;
+  padding: 9rem 8rem; }
+  @media only screen and (max-width: 75em) {
+    .mejoresPeliculas {
+      display: grid;
+      grid-template-rows: 40% 60%;
+      height: auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .mejoresPeliculas {
+      padding: 5rem 3rem;
+      height: 125rem; } }
+  .mejoresPeliculas__contenido {
+    width: 50%;
+    text-align: center; }
+    .mejoresPeliculas__contenido--formulario {
+      background: #EF2542;
+      padding: 6rem 3rem 3rem 3rem;
+      display: flex;
+      flex-direction: column; }
+      @media only screen and (max-width: 75em) {
+        .mejoresPeliculas__contenido--formulario {
+          width: 100%;
+          padding: 3rem 0 0 1rem; } }
+    .mejoresPeliculas__contenido--contenido {
+      padding: 6rem 3rem 3rem 3rem;
+      background: #131313; }
+      @media only screen and (max-width: 75em) {
+        .mejoresPeliculas__contenido--contenido {
+          width: 100%;
+          padding: 2rem 3rem 3rem 3rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .mejoresPeliculas__contenido--contenido {
+          height: fit-content; } }
+  .mejoresPeliculas__lista {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+    @media only screen and (max-width: 37.5em) {
+      .mejoresPeliculas__lista {
+        margin-top: 1rem; } }
+  .mejoresPeliculas__listaItem {
+    display: grid;
+    width: 90%;
+    height: 7rem;
+    padding: .5rem;
+    border-radius: 3px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr max-content 1fr;
+    justify-content: center;
+    transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .mejoresPeliculas__listaItem {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0.5rem; } }
+    .mejoresPeliculas__listaItem:hover {
+      background: #2E2828; }
+    .mejoresPeliculas__listaItem img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 10rem;
+      grid-row: 1 / 3;
+      grid-column: 1 / 2;
+      justify-self: center;
+      align-self: center; }
+      @media only screen and (max-width: 56.25em) {
+        .mejoresPeliculas__listaItem img {
+          margin-bottom: 0.5rem; } }
+    .mejoresPeliculas__listaItem h5 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: end;
+      color: #EF2542;
+      font-weight: 600;
+      font-size: 1.4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .mejoresPeliculas__listaItem h5 {
+          align-self: center; } }
+    .mejoresPeliculas__listaItem p {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      color: #eeee;
+      opacity: 0.7;
+      font-weight: 500;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .mejoresPeliculas__listaItem p {
+          margin: 0; } }
+    .mejoresPeliculas__listaItem div {
+      grid-row: 1 / 3;
+      grid-column: 3 / 4;
+      align-self: center;
+      display: flex;
+      justify-content: center; }
+    .mejoresPeliculas__listaItem a {
+      padding: 0.5rem; }
+    .mejoresPeliculas__listaItem a svg {
+      fill: transparent;
+      stroke: #EF2542;
+      font-size: 2.3rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      transition: all .2s; }
+    .mejoresPeliculas__listaItem a:first-child:hover svg {
+      fill: #EF2542; }
+    .mejoresPeliculas__listaItem a:last-child:hover svg {
+      stroke: transparent;
+      fill: #eeee; }
+  .mejoresPeliculas__paginacion {
+    display: flex;
+    width: 90%;
+    margin: 0 auto; }
+    .mejoresPeliculas__paginacion a svg {
+      width: 2rem;
+      height: 2rem;
+      fill: #eeee; }
+    .mejoresPeliculas__paginacion span {
+      color: #EF2542; }
+    .mejoresPeliculas__paginacion a svg:hover {
+      cursor: pointer; }
+    .mejoresPeliculas__paginacion--izquierda {
+      margin-right: auto; }
+    .mejoresPeliculas__paginacion--derecha {
+      margin-left: auto; }
+
+.peliculaFavorita {
+  width: 100%;
+  height: auto;
+  background: #131313;
+  padding: 9rem 8rem;
+  display: grid;
+  grid-template-rows: 10rem max-content;
+  grid-gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .peliculaFavorita {
+      padding: 9rem 1rem; } }
+  .peliculaFavorita__titulo {
+    text-align: center; }
+  .peliculaFavorita__form {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .peliculaFavorita__info {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 3rem 3rem 0 3rem;
+    grid-template-rows: 100%; }
+    @media only screen and (max-width: 75em) {
+      .peliculaFavorita__info {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%; } }
+    @media only screen and (max-width: 56.25em) {
+      .peliculaFavorita__info {
+        padding: 3rem 1rem 0 1rem; } }
+    .peliculaFavorita__info--primaria {
+      padding: 4rem;
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .peliculaFavorita__info--primaria img {
+        width: 15rem;
+        height: 25rem; }
+      .peliculaFavorita__info--primaria h4 {
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: #EF2542;
+        font-weight: 400; }
+    .peliculaFavorita__info--secundaria {
+      padding: 1rem;
+      align-self: center;
+      display: grid;
+      grid-template-rows: repeat(5, max-content);
+      grid-gap: 3rem; }
+  .peliculaFavorita__lista {
+    display: flex;
+    margin-top: 1rem; }
+    .peliculaFavorita__lista li {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .peliculaFavorita__lista li:not(:first-child) {
+      margin-left: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .peliculaFavorita__lista li:not(:first-child) {
+          margin-left: 2rem; } }
+    .peliculaFavorita__lista li img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 10rem; }
+  .peliculaFavorita__duracion img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem; }
+
+.popUp {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(239, 37, 66, 0.9);
+  z-index: 9999;
+  position: fixed;
+  padding: 6rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  visibility: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .popUp {
+      padding: 3px; } }
+  .popUp__cerrar {
+    grid-column: 14 / 15;
+    grid-row: 1 / 2;
+    align-self: start;
+    justify-self: end;
+    background: #eeee;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    position: relative;
+    transition: all .2s;
+    text-decoration: none; }
+    .popUp__cerrar:after {
+      content: 'X';
+      position: absolute;
+      top: 25%;
+      left: 38%;
+      color: #EF2542;
+      font-weight: 700;
+      transition: all .2s; }
+  .popUp__cerrar:hover {
+    background: transparent;
+    border: 1px solid #eeee; }
+    .popUp__cerrar:hover:after {
+      color: #eeee; }
+  .popUp__img {
+    grid-column: 2 / 5;
+    grid-row: 3 / 9;
+    width: 80%;
+    height: 100%;
+    border-radius: 3px;
+    justify-self: center; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__img {
+        grid-column: 5 / 11;
+        grid-row: 1 / 5; } }
+    @media only screen and (max-width: 37.5em) {
+      .popUp__img {
+        justify-self: center;
+        grid-column: 5 / 13;
+        grid-row: 1 / 5; } }
+  .popUp__titulo {
+    grid-column: 1 / 6;
+    grid-row: 10 / 11;
+    margin: 0 auto;
+    align-self: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #eeee; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__titulo {
+        grid-row: 5 / 6;
+        grid-column: 1 / -1; } }
+  .popUp__sinopsisTitulo {
+    grid-row: 2 / 3;
+    grid-column: 6 / 8;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #eeee; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__sinopsisTitulo {
+        grid-row: 6 / 7;
+        grid-column: 1 / -1; } }
+  .popUp__sinopsis {
+    grid-row: 3 / 6;
+    grid-column: 6 / -1;
+    color: #eeee;
+    font-size: 1.2rem;
+    text-align: justify; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__sinopsis {
+        grid-row: 7 / 8;
+        grid-column: 1 / -1; } }
+  .popUp__repartoTitulo {
+    grid-row: 7 / 8;
+    grid-column: 6 / 8;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #eeee; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__repartoTitulo {
+        grid-row: 8 / 9;
+        grid-column: 1 / -1; } }
+  .popUp__lista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-row: 8 / 9;
+    grid-column: 6 / -1;
+    list-style: none; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__lista {
+        grid-row: 9 / 10;
+        grid-column: 1 / -1; } }
+    @media only screen and (max-width: 75em) {
+      .popUp__lista--pelicula {
+        display: flex;
+        flex-direction: column;
+        height: auto; } }
+    .popUp__lista li {
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .popUp__lista li:not(:last-child) {
+      margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .popUp__lista li:not(:last-child) {
+          margin: 0; } }
+    .popUp__lista li img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 8rem; }
+    .popUp__lista li p {
+      margin-top: 2px;
+      font-size: 1.2rem; }
+  .popUp__duracionTitulo {
+    grid-row: 9 / 10;
+    align-self: flex-end;
+    grid-column: 6 / 8;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #eeee; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__duracionTitulo {
+        grid-row: 10 / 11;
+        grid-column: 1 / -1; } }
+  .popUp__duracionImagen {
+    grid-row: 10 / 11;
+    grid-column: 6 / 7;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__duracionImagen {
+        grid-row: 11 / 12;
+        grid-column: 1 / -1; } }
+  .popUp__duracion {
+    grid-row: 11 / 12;
+    grid-column: 6 / 8;
+    align-self: center;
+    color: #eeee;
+    font-size: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__duracion {
+        grid-row: 12 / 13;
+        grid-column: 1 / -1; } }
+  .popUp__generoTitulo {
+    grid-row: 12 / 13;
+    grid-column: 6 / 8;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #eeee; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__generoTitulo {
+        grid-row: 13 / 14;
+        grid-column: 1 / -1; } }
+  .popUp__genero {
+    grid-row: 13 / 14;
+    grid-column: 6 / 10;
+    color: #eeee;
+    font-size: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__genero {
+        grid-row: 14 / 15;
+        grid-column: 1 / -1; } }
+  .popUp__bTn {
+    grid-column: 13 / -1;
+    grid-row: 14 / 15;
+    justify-self: end;
+    width: 80%;
+    background: #eeee;
+    color: #EF2542;
+    border: 2px solid #eeee;
+    height: 4rem;
+    font-weight: 700;
+    width: 12rem;
+    font-size: 1.6rem;
+    transition: all .3s; }
+    @media only screen and (max-width: 56.25em) {
+      .popUp__bTn {
+        grid-row: 13 / 14;
+        grid-column: 13 / -1; } }
+    .popUp__bTn:hover {
+      border: 2px solid #eeee;
+      background: transparent;
+      color: #eeee; }
+    .popUp__bTn:focus {
+      outline: none; }
+
+.seccionCitas {
+  height: auto;
+  width: 100%;
+  padding: 20rem 8rem;
+  background-image: linear-gradient(to right bottom, #040404d5, #040404d5), url(/img/img-2.jpg);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: center;
+  grid-gap: 2rem;
+  display: grid;
+  background-attachment: fixed;
+  background-size: cover; }
+  .seccionCitas__citaContenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .seccionCitas__foto {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 46rem;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center; }
+    .seccionCitas__foto--1 {
+      background-image: linear-gradient(to right bottom, rgba(239, 37, 67, 0.5), rgba(239, 37, 67, 0.5)), url(/img/rocky.jpg); }
+    .seccionCitas__foto--2 {
+      background-image: linear-gradient(to right bottom, rgba(239, 37, 67, 0.5), rgba(239, 37, 67, 0.5)), url(/img/driver.jpg);
+      background-position-x: right; }
+    .seccionCitas__foto--3 {
+      background-image: linear-gradient(to right bottom, rgba(239, 37, 67, 0.5), rgba(239, 37, 67, 0.5)), url(/img/fight.jpg); }
+    .seccionCitas__foto--4 {
+      background-image: linear-gradient(to right bottom, rgba(239, 37, 67, 0.5), rgba(239, 37, 67, 0.5)), url(/img/johnny.jpg); }
+  .seccionCitas__cita {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 25rem;
+    align-items: center; }
+  .seccionCitas__actor {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end; }
+

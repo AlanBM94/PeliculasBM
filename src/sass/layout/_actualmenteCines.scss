@@ -1,0 +1,12 @@
+.actualmenteCines {
+    padding: 9rem 8rem;
+    display: grid;
+    grid-template-rows: 10rem max-content 17rem;
+    background-image: linear-gradient(to right bottom, #232526, $negro);
+    text-align: center;
+    @include responsive(tab-port){
+        padding: 9rem 3rem;
+    }
+}
+
+

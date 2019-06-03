@@ -1,0 +1,32 @@
+// Colores
+$rosaPrimario: #EF2542;
+$rosa-Primario-Transparente: rgba(239, 37, 67, 0.5);
+$rosaSecundario: #FF2746;
+$gris: #2E2828;
+$gris-transparente: #040404d5;
+$negro: #131313;
+$blanco: #eeee;
+
+//Centrar texto
+$centrarTexto: center;
+
+// Tamaño de letra
+$tamañoDefault: 1.6rem;
+
+// Tamaño de iconos de los likes
+$tamañoPequeño: 1.4rem;
+
+//Ruta de las imagenes
+$imgpath: '/img';
+
+//Gradiente gris que va sobre ciertas imagenes
+$capaGris: linear-gradient(to right bottom, $gris-transparente, $gris-transparente);
+
+
+//Gradiente rosa que va sobre ciertas imagenes
+$capaRosa: linear-gradient(to right bottom, $rosa-Primario-Transparente, $rosa-Primario-Transparente);
+
+
+
+
+

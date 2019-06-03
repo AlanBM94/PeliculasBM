@@ -1,0 +1,207 @@
+.actoresJuntosPelicula {
+    width: 100%;
+    height: auto;
+    background: $gris;
+    justify-content: center;
+    padding: 9rem 8rem 11rem 8rem;
+    @include grid2Filas;
+    @include responsive(tab-port){
+        grid-template-rows: repeat(2, max-content);
+        padding: 6rem 3rem 11rem 3rem;
+    }
+    &__titulo {
+        text-align: $centrarTexto;
+        @include responsive(tab-port){
+            padding: 0;
+        }
+    }
+    &__contenido {
+        width: 100%;
+        display: flex;
+        margin-top: 4rem;
+        @include responsive(tab-land){
+            display: grid;
+            grid-template-rows: repeat(2, 50%);
+            height: auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive(tab-port){
+            grid-template-rows: repeat(2, max-content);
+            
+        }
+    }
+    &__pelicula {
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+        background: $rosaPrimario;
+        display: flex;
+        justify-content: center;
+        @include responsive(tab-land){
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+        }
+    }
+    &__contenedorPaginacion {
+        @include paginacion;
+        justify-content: center;
+        & a svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $blanco;
+        }
+        & span {
+            color: $negro;
+        }
+        & a svg:hover{
+            cursor: pointer;
+        }
+        &--izquierda {
+            @include paginacionBtnIzquierda;
+        }
+        &--derecha {
+           @include paginacionBtnDerecha;
+        }
+    }
+    &__actor {
+        width: 80%;
+        height: auto;
+        padding: 3rem;
+        background: $negro;
+        @include centrarFlex;
+        @include responsive(tab-land){
+            height: 100%;
+        }
+        
+        &--1 {
+            @include responsive(tab-land){
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                width: 100%;
+            }
+        }
+        &--2 {
+            @include responsive(tab-land){
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                width: 100%;
+            }
+        }
+    }
+    &__actorTitulo{
+        text-align: $centrarTexto;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        
+    }
+    &__resultadoActor {
+        margin-top: 4rem;
+        @include centrarFlex;
+        // justify-content: space-around;
+        height: auto;
+
+        @include responsive(tab-land){
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            justify-content: space-around;
+        }
+        @include responsive(tab-port){
+            margin-top: 7rem;
+            flex-direction: column;
+        }
+
+        & img {
+            width: 9rem;
+            height: 9rem;
+            border-radius: 18rem;
+            @include responsive(tab-land){
+                width: 7rem;
+                height: 7rem;
+                border-radius: 14rem;
+            }
+            @include responsive(tab-port){
+                width: 6rem;
+                height: 6rem;
+                border-radius: 12rem;
+            }
+                
+        }
+
+        & ul {
+            margin-top: 4rem;
+            list-style: none;
+            text-align: $centrarTexto;
+            & li {
+                & span {
+                    color: $blanco;
+                    opacity: 0.8;
+                }
+                font-size: $tamañoDefault;
+                color: $rosaPrimario;
+            }
+
+            & li:not(:last-child){
+                margin-bottom: 1.5rem;
+
+                @include responsive(tab-land){
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+    &__peliculaContenido {
+        @include centrarFlex;
+        justify-content: space-around;
+        align-self: center;
+        width: 90%;
+        
+        @include responsive(tab-land){
+            flex-direction: row;
+            width: 100%;
+        }
+        @include responsive(tab-port){
+            flex-direction: column;
+            height: auto;
+
+        }
+        & ul {
+            list-style: none;
+            & li {
+                display: flex;
+                @include centrarFlex;
+            }
+
+            & li:not(:last-child){
+                margin-bottom: 3rem;
+            }
+        } 
+        & img {
+            width: 14rem;
+            height: 14rem;
+            border-radius: 28rem;
+            margin-bottom: 2rem;
+            @include responsive(tab-port){
+                width: 8rem;
+                height: 8rem;
+                border-radius: 16rem;
+            }
+            
+        }
+        & h4 {
+            font-size: 1.8rem;
+            color: $blanco;
+            font-weight: 700;
+        }
+
+        & p {
+            font-size: $tamañoDefault;
+            color: rgba(255, 255, 255, 0.692);
+            font-weight: 600;
+        }
+    }
+}
