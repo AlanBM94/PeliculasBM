@@ -42,6 +42,17 @@
         &:hover{
             border: 1px solid transparent;
         }
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &--actorIcono{
+        width: 2rem;
+        border: none;
+        &:hover{
+            border: none;
+        }
     }
 
     &--info {
@@ -92,4 +103,12 @@
         width: 3rem;
     
     }
+}
+
+
+.iconoBusqueda{
+    width: 2rem;
+    height: 2rem;
+    fill: $rosaPrimario;
+    margin-top: 5px;
 }

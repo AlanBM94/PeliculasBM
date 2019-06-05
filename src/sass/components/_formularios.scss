@@ -4,16 +4,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__actorInput {
+        &:focus + button svg{
+            fill: $blanco;
+        }
+    }
+
     &--actor{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        // flex-direction: column;
+        // justify-content: space-around;
         height: 100%;
-        
+    
     }
     & input {
         width: 80%;
-        margin: 0 auto;
+        // margin: 0 auto;
         text-align: center;
         border: none;
         border-bottom: 1px solid $rosaPrimario;

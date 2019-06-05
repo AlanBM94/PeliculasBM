@@ -6,7 +6,6 @@ export const valorInputActor = input => input.value;
 export const limpiarInput = (val) => val == 1 ? domElements.inputActor1.value = '' : domElements.inputActor2.value = '';
 
 // Formato cumpleaños
-
 const cumpleaños = (fecha) => {
     let mes, dia;
     const cumple = fecha.slice(5).split('-');

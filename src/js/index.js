@@ -265,11 +265,13 @@ window.addEventListener('load', () => {
 
 
 // Eventos que se dispara cuando el usuario se pone en los inputs de los actores
-domElements.inputActor1.addEventListener('blur', () => {
+domElements.formularioActor1.addEventListener('submit', (e) => {
+    e.preventDefault();
     controladorActor(1);
 });
 
-domElements.inputActor2.addEventListener('blur', () => {
+domElements.formularioActor2.addEventListener('submit', (e) => {
+    e.preventDefault();
     controladorActor(2);
 });
 
@@ -280,7 +282,8 @@ domElements.btnPeliculaActores.addEventListener('click', e=> {
 });
 
 // Evento que se dispara cuando se busca una película
-domElements.inputPelicula.addEventListener('blur', () => {
+domElements.formularioPeliculaFavorita.addEventListener('submit', (e) => {
+    e.preventDefault();
     controladorPelicula();
 });
 

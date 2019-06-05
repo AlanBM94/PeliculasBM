@@ -2,12 +2,15 @@
 export const domElements = {
     carouselInnerActualmente: document.querySelector('.carousel-inner'),
     carouselInnerProximosEstrenos: document.querySelector('.carousel-inner--2'),
-    inputActor1: document.querySelector('.formulario__actor--1'),
-    inputActor2: document.querySelector('.formulario__actor--2'),
+    inputActor1: document.querySelector('.formulario__actorInput--1'),
+    inputActor2: document.querySelector('.formulario__actorInput--2'),
+    formularioActor1: document.querySelector('.formulario--actor--1'),
+    formularioActor2: document.querySelector('.formulario--actor--2'),
     actorContenedor1: document.querySelector('.actoresJuntosPelicula__resultadoActor--1'),
     actorContenedor2: document.querySelector('.actoresJuntosPelicula__resultadoActor--2'),
     btnPeliculaActores: document.querySelector('.bTn--info-b'),
     peliculasActoresContenedor: document.querySelector('.actoresJuntosPelicula__peliculaContenido ul'),
+    formularioPeliculaFavorita: document.querySelector('.formulario--peliculaFavorita'),
     inputPelicula: document.querySelector('.formulario__inputPelicula'),
     peliculaContenedor: document.querySelector('.peliculaFavorita__info'),
     formularioMejoresPeliculas: document.querySelector('.formulario__mejoresPeliculas'),
@@ -22,8 +25,10 @@ export const domElements = {
     likesContenedor: document.querySelector('.header__likesList'),
     menuItems: Array.from(document.querySelectorAll('.header__navListaItem')),
     menuBtn: document.querySelector('.header__menubTn')
-
 };
+console.log(domElements.inputActor1);
+console.log(domElements.inputActor2);
+console.log(domElements.formularioPeliculaFavorita);
 
 // Objeto de busqueda
 export const objBusqueda = () => {
