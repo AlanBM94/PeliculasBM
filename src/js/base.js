@@ -26,9 +26,7 @@ export const domElements = {
     menuItems: Array.from(document.querySelectorAll('.header__navListaItem')),
     menuBtn: document.querySelector('.header__menubTn')
 };
-console.log(domElements.inputActor1);
-console.log(domElements.inputActor2);
-console.log(domElements.formularioPeliculaFavorita);
+
 
 // Objeto de busqueda
 export const objBusqueda = () => {

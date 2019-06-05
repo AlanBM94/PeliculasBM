@@ -70,7 +70,7 @@
         background: $negro;
         @include centrarFlex;
         @include responsive(tab-land){
-            height: 100%;
+            height: auto;
         }
         
         &--1 {
@@ -110,7 +110,7 @@
             justify-content: space-around;
         }
         @include responsive(tab-port){
-            margin-top: 7rem;
+            margin-top: 1rem;
             flex-direction: column;
         }
 

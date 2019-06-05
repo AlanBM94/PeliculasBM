@@ -121,6 +121,22 @@ body {
     cursor: pointer;
     color: #FF2746;
     background-color: #eeee; }
+  .bTn--actor {
+    border: 1px solid #EF2542;
+    background: transparent;
+    padding: 0;
+    color: #EF2542;
+    width: 40%;
+    font-weight: 400; }
+    .bTn--actor:hover {
+      border: 1px solid transparent; }
+    .bTn--actor:focus {
+      outline: none; }
+  .bTn--actorIcono {
+    width: 2rem;
+    border: none; }
+    .bTn--actorIcono:hover {
+      border: none; }
   .bTn--info {
     margin: 0 auto;
     height: 5rem;
@@ -163,15 +179,25 @@ body {
     height: 3rem;
     width: 3rem; }
 
+.iconoBusqueda {
+  width: 2rem;
+  height: 2rem;
+  fill: #EF2542;
+  margin-top: 5px; }
+
 .formulario {
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .formulario__actorInput:focus + button svg {
+    fill: #eeee; }
+  .formulario--actor {
+    display: flex;
+    height: 100%; }
   .formulario input {
     width: 80%;
-    margin: 0 auto;
     text-align: center;
     border: none;
     border-bottom: 1px solid #EF2542;
